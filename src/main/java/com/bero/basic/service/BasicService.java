@@ -17,6 +17,7 @@ public class BasicService {
 
     public List<String> getMemberList() {
         List<Member> members = memberRepository.findAll();
+        System.out.println(members);
         List<String> list = new ArrayList<>();
 
         for (Member member : members) {
