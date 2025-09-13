@@ -17,8 +17,7 @@ public class BasicController {
         this.basicService = basicService;
     }
 
-    @GetMapping
-    @RequestMapping("/members")
+    @GetMapping("/members")
     public List<String> getMemberList() {
         return basicService.getMemberList();
     }
